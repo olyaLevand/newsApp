@@ -6,13 +6,29 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            NewsView(mode: .all, news: viewModel.news)
+                .tabItem {
+                    Label("Всі", systemImage: "list.dash")
+                }
+
+            NewsView(mode: .saved, news: viewModel.savedNews)
+                .tabItem {
+                    Label("Збережені", systemImage: "bookmark.fill")
+                }.onAppear{
+                    viewModel.updateSavedNews()
+                }
+        }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
