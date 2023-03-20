@@ -34,7 +34,6 @@
 		0054F48829C4DA010086C77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0054F48D29C4DA010086C77D /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0054F49329C4DA010086C77D /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0054F49529C4DA010086C77D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0054F4A829C4DA6F0086C77D /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		0054F4AA29C4DB2F0086C77D /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		0054F4AC29C4DF0D0086C77D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -72,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				0054F48529C4D9FB0086C77D /* Shared */,
-				0054F49429C4DA010086C77D /* macOS */,
 				0054F48E29C4DA010086C77D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,14 +96,6 @@
 				0054F49329C4DA010086C77D /* NewsApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0054F49429C4DA010086C77D /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				0054F49529C4DA010086C77D /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		0054F4A429C4DA0E0086C77D /* View */ = {
